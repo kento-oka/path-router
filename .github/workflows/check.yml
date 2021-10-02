@@ -15,7 +15,7 @@ jobs:
 
     runs-on: ${{ matrix.os }}
 
-    name: on ${{ os }} / Node ${{ node-version }}
+    name: on ${{ matrix.os }} / Node ${{ matrix.node-version }}
 
     steps:
       - name: Checkout
