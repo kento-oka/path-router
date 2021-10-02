@@ -1,10 +1,9 @@
 {
   "name": "@kento-oka/path-router",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "typings": "lib/index.d.ts",
   "files": [
     "dist/"
   ],
