@@ -1,0 +1,48 @@
+{
+  "name": "@kento-oka/path-router",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "author": "kento-oka <kento-oka@kentoka.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kento-oka/path-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kento-oka/path-router/issues"
+  },
+  "scripts": {
+    "build": "run-s build:clean build:compile",
+    "build:clean": "rimraf dist",
+    "build:compile": "tsc --build",
+    "lint": "run-s lint:typecheck lint:eslint lint:prettier",
+    "lint:typecheck": "tsc --noEmit",
+    "lint:eslint": "eslint src",
+    "lint:prettier": "prettier --check src jest.config.js",
+    "fix": "run-s fix:eslint fix:prettier ",
+    "fix:eslint": "eslint src --fix",
+    "fix:prettier": "prettier --write .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "path-to-regexp": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.0.6",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
+  }
+}
