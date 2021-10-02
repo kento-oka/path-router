@@ -28,7 +28,8 @@
     "fix:eslint": "eslint src --fix",
     "fix:prettier": "prettier --write .",
     "test": "jest",
-    "preversion": "run-s lint test"
+    "preversion": "run-s lint test",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "path-to-regexp": "^6.2.0"
